@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { Chart, ChartType } from 'chart.js/auto';
 import { mesos } from '../../../constants/months.enum';
+import { InscripcioChartService } from 'app/inscripcions/services/inscripcio-chart.service';
 
 @Component({
   selector: 'app-chart-ins-qp',
@@ -11,11 +12,11 @@ import { mesos } from '../../../constants/months.enum';
 })
 export class ChartInsQpComponent {
 
-  // Atributo que almacena los datos del chart
+
   public chart: Chart | undefined;
 
   ngOnInit(): void {
-    // datos
+
 
     const data = {
       labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
