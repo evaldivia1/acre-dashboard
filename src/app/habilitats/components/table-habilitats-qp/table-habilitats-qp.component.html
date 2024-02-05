@@ -1,0 +1,21 @@
+
+<table class="table table-striped-columns table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">Codi</th>
+            <th scope="col">Descripció</th>
+            <th scope="col">Interessats</th>
+            <th scope="col">No Interessats</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for(hab of llistaQuantityHabQP; track hab.qp) {
+        <tr>
+            <th scope="row">{{ hab.qp }}</th>
+            <td>{{ hab.descCa }}</td>
+            <td>{{ hab.numHabilitats }}</td>
+            <td>{{ hab.numHabilitatsNoInteressats }}</td>
+        </tr>
+        }
+    </tbody>
+</table>

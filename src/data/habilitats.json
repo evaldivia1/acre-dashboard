@@ -1,0 +1,20 @@
+{
+    "result":[
+        {
+            "id":1,
+            "name":"pep"
+        },
+        {
+            "id":2,
+            "name":"joan"
+        },
+        {
+            "id":3,
+            "name":"emili"
+        },
+        {
+            "id":4,
+            "name":"PEre"
+        }
+    ]
+}

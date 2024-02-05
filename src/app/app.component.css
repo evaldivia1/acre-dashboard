@@ -1,0 +1,18 @@
+body{
+    position: relative;
+    
+}
+.bi{
+    color:white;
+}
+.active{
+    border-bottom: 1px solid #fff;
+    font-weight: 600;
+}
+main{
+    margin-top: 4rem;
+}
+.year-top{
+    margin-right: 8rem;
+    color:#ffecd9;
+}

@@ -1,0 +1,14 @@
+[
+  { "mes": 1, "numInscripcions": 340 },
+  { "mes": 2, "numInscripcions": 445 },
+  { "mes": 3, "numInscripcions": 333 },
+  { "mes": 4, "numInscripcions": 265 },
+  { "mes": 5, "numInscripcions": 382 },
+  { "mes": 6, "numInscripcions": 412 },
+  { "mes": 7, "numInscripcions": 381 },
+  { "mes": 8, "numInscripcions": 290 },
+  { "mes": 9, "numInscripcions": 292 },
+  { "mes": 10, "numInscripcions": 360 },
+  { "mes": 11, "numInscripcions": 380 },
+  { "mes": 12, "numInscripcions": 304 }
+]
