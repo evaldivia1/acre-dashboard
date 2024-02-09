@@ -2,7 +2,34 @@
 <section class="container-charts">
     <div class="card-chart"><app-chart-ins-mes /></div>
     <div class="card-chart"><app-chart-ins-total/></div>
-    <div class="card-chart"><app-chart-ins-qp/></div>
+    <div class="card-chart"><app-chart-ins-ucs-fp/></div>
 </section>
 
+<div>
+    <h4 class="border bt-1 p-2">
+      Inscripcions per qualificacions professionals obertes
+    </h4>
+    <!-- Selector FP -->
+    <div class="row mb-3 w-50">
+      <div class="col">
+        <select
+          formControlName="formProfessional"
+          class="form-select"
+          (change)="onChangeFP($event)"
+        >
+          <option value="">-- Selecciona FP --</option>
+          @for(fp of llistaFP; track fp) {
+          <option [value]="fp">{{ fp }}</option>
+          }
+        </select>
+      </div>
+    </div>
+
+@defer {
+    <app-table-inscripcions-qp [llistaQuantityInsQP]="llistaQuantityInsQP()" />
+  } @placeholder {
+      <p>Taula</p>
+  } @loading (minimum 1s) {
+      <p>Loading...</p>
+  }
 

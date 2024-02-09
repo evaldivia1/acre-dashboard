@@ -1,39 +1,43 @@
 <h4 class="border bt-1 p-2">
-    <i class="bi bi-clipboard-data-fill"></i>
-    Habilitats docents per familia professional
+  <i class="bi bi-clipboard-data-fill"></i>
+  Habilitats docents per familia professional
 </h4>
-<div style="text-align: center;">
-    <section>
-        @defer {
-            <app-chart-hab-fp />
-        } @placeholder {
-            <p>Gràfica</p>
-        } @loading (minimum 1s) {
-            <p>Loading...</p>
-        }
-    </section>
+<div style="text-align: center">
+  <section>
+    @defer {
+    <app-chart-hab-fp />
+    } @placeholder {
+    <p>Gràfica</p>
+    } @loading (minimum 1s) {
+    <p>Loading...</p>
+    }
+  </section>
 </div>
 <div>
-  <h4 class="border bt-1 p-2">Habilitats per qualificacions professionals obertes</h4>
+  <h4 class="border bt-1 p-2">
+    Habilitats per qualificacions professionals obertes
+  </h4>
   <!-- Selector FP -->
   <div class="row mb-3 w-50">
     <div class="col">
-      
-      <select formControlName="formProfessional" class="form-select" (change)="onChangeFP($event)">
+      <select
+        formControlName="formProfessional"
+        class="form-select"
+        (change)="onChangeFP($event)"
+      >
         <option value="">-- Selecciona FP --</option>
         @for(fp of llistaFP; track fp) {
-            <option [value]="fp">{{ fp }}</option>
+        <option [value]="fp">{{ fp }}</option>
         }
       </select>
     </div>
   </div>
-  
+
   @defer {
-    <app-table-habilitats-qp [llistaQuantityHabQP]="llistaQuantityHabQP()" />
+  <app-table-habilitats-qp [llistaQuantityHabQP]="llistaQuantityHabQP()" />
   } @placeholder {
-      <p>Taula</p>
+  <p>Taula</p>
   } @loading (minimum 1s) {
-      <p>Loading...</p>
+  <p>Loading...</p>
   }
-    
 </div>

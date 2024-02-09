@@ -1,0 +1,21 @@
+
+<table class="table ">
+    <thead>
+        <tr>
+            <th scope="col">Codi</th>
+            <th scope="col">Descripció</th>
+            <th scope="col">Nombre Inscripcions</th>
+            <th scope="col">Nombre UCs</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for(ins of llistaQuantityInsQP; track ins.codiQP) {
+        <tr>
+            <th scope="row">{{ ins.codiQP }}</th>
+            <td>{{ ins.descCa }}</td>
+            <td>{{ ins.numInscripcions }}</td>
+            <td>{{ ins.numUCs }}</td>
+        </tr>
+        }
+    </tbody>
+</table>
